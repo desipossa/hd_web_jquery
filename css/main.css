@@ -1,3 +1,8 @@
+/* 슬릭슬라이드 깜박임 해결 : 브라우즈 업그레이드와 관련있는 이슈였음... */
+.slick-slide {
+    transform: translate3d(0, 0, 0);
+}
+
 .inner {
     width: 1200px;
     margin: 0 auto;

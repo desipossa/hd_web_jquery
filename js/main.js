@@ -6,6 +6,7 @@ $(function () {
 
     $('.main_slider').slick({
         arrows: false,
+        css3: false,
     });
 
     $(window).on('scroll', function () {
