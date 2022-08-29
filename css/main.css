@@ -1,4 +1,4 @@
-/* 슬릭슬라이드 깜박임 해결 : 브라우즈 업그레이드와 관련있는 이슈였음... */
+/* 슬릭슬라이드 깜박임 해결 : 브라우즈 업그레이드와 관련있는 이슈였음... reset으로 옮길 예정 */
 .slick-slide {
     transform: translate3d(0, 0, 0);
 }
@@ -52,7 +52,7 @@
 }
 
 .Header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -126,7 +126,7 @@
     position: absolute;
     left: 35px;
     right: 100%;
-    bottom: 0;
+    bottom: -1px;
     height: 2px;
     background: #008850;
     transition: 0.3s;
@@ -164,8 +164,12 @@
 }
 
 .Section01 {
-    transform: translateY(-155px);
-    height: 745px;
+    padding: 155px 0 0 0;
+    transition: 0.5s;
+}
+
+.Section01.on {
+    padding: 0 0 0 0;
 }
 
 .Section02 {

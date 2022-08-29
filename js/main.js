@@ -1,12 +1,12 @@
 $(function () {
     /////////////////////////////////////
     $('.top_close_btn').on('click', function () {
-        $('.TopBanner').addClass('on')
+        $('.TopBanner').addClass('on');
+        $('.Section01').addClass('on');
     });
 
     $('.main_slider').slick({
         arrows: false,
-        css3: false,
     });
 
     $(window).on('scroll', function () {
