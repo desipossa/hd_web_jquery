@@ -8,6 +8,15 @@ cloned 가 생성 되는 시간보다 변하는 시간이 길어서 ... 가 원�
     transition-delay: 30ms;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.Wrap {
+    width: 100%;
+    min-width: 1900px;
+}
+
 .inner {
     width: 1200px;
     margin: 0 auto;
@@ -61,6 +70,7 @@ cloned 가 생성 되는 시간보다 변하는 시간이 길어서 ... 가 원�
     top: 0;
     left: 0;
     right: 0;
+    min-width: 1900px;
     /* padding: 0 75px; */
     background: rgba(0, 0, 0, 0.3);
     color: #f9f9f9;
@@ -630,4 +640,15 @@ cloned 가 생성 되는 시간보다 변하는 시간이 길어서 ... 가 원�
 
 .Section04 .slick-dots li button {
     display: none;
+}
+
+
+/* 오늘 하루 팝업 */
+.today_pop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
 }

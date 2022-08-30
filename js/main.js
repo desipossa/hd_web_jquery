@@ -83,6 +83,20 @@ $(function () {
         sct > 0
             ? $('.Header').addClass('on')
             : $('.Header').removeClass('on')
+    });
+
+    // pop up cookie
+
+    console.log($.cookie('todayPopUp'));
+    var TCK = $.cookie('todayPopUp');
+    if (!TCK) {
+        $('.today_pop').show();
+    }
+
+    $('#Today').on('change', function () {
+        $.cookie('todayPopUp', '팝업쿠키', { expires: 0.1 });
+        $('.today_pop').hide();
+        //출처: https://offbyone.tistory.com/176 [쉬고 싶은 개발자:티스토리]
     })
 
 
