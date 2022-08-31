@@ -190,7 +190,7 @@ body {
     float: left;
 }
 
-.Header .top_service .search_box {
+.Header .top_search .search_box {
     display: none;
     position: absolute;
     top: 80px;
@@ -203,11 +203,11 @@ body {
     text-align: center;
 }
 
-.Header .top_service.on .search_box {
+.Header .top_search.on .search_box {
     display: block;
 }
 
-.Header .top_service .search_box input[type="text"] {
+.Header .top_search .search_box input[type="text"] {
     font-size: 20px;
     width: 450px;
     border: none;
@@ -215,14 +215,14 @@ body {
     border-bottom: 2px solid #444;
 }
 
-.Header .top_service .search_box button {
+.Header .top_search .search_box button {
     background: transparent;
     border: none;
     outline: none;
     font-size: 30px;
 }
 
-.Header .top_service .search_box::before {
+.Header .top_search .search_box::before {
     content: "";
     position: absolute;
     top: -10px;
