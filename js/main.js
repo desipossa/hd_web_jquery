@@ -5,6 +5,16 @@ $(function () {
         $('.Section01').addClass('on');
     });
 
+    $('.lang strong').on('click', function () {
+        $(this).toggleClass('on');
+        $('.lang').toggleClass('on');
+    });
+
+    $('.top_search strong').on('click', function () {
+        $(this).toggleClass('on');
+        $('.top_search').toggleClass('on');
+    })
+
     $('.main_slider').on('init reInit afterChange', function (e, ms, c) {
         var current = $('.main_slider .slick-current');
         current.addClass('on').siblings().removeClass('on');
@@ -85,14 +95,17 @@ $(function () {
             : $('.Header').removeClass('on')
     });
 
-    // pop up cookie
 
+
+    // pop up cookie
 
     var date = new Date();
     date.setTime(date.getTime() + 60 * 1000);
 
-    console.log(date)
-    console.log($.cookie('todayPopUp'));
+    // console.log(date)
+    // console.log($.cookie('todayPopUp'));
+
+
     var TCK = $.cookie('todayPopUp');
     if (!TCK) {
         $('.today_pop').show();

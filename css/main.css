@@ -125,6 +125,121 @@ body {
     margin: 0 70px 0 0;
 }
 
+.Header .top_service .project {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.Header .top_service .project li {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.Header .top_service .project li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+    margin: 0 10px;
+}
+
+.Header .top_service strong:hover {
+    color: #008850;
+}
+
+.Header .top_service strong.on {
+    color: #008850;
+}
+
+.Header .top_service .lang {
+    position: relative;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.Header .top_service .lang .arrow {
+    font-size: 7px;
+    vertical-align: 0.3em;
+}
+
+.Header .top_service .lang.on .arrow {
+    transform: rotate(180deg);
+}
+
+.Header .top_service .lang .lang_box {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.45;
+    border: 2px solid #008850;
+    background: #fff;
+    color: #444444;
+    padding: 20px 35px;
+}
+
+.Header .top_service .lang.on .lang_box {
+    display: block;
+}
+
+.Header .top_service .top_search {
+    position: relative;
+    float: left;
+}
+
+.Header .top_service .search_box {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: -65px;
+    line-height: 1;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 30px 50px;
+    width: 600px;
+    text-align: center;
+}
+
+.Header .top_service.on .search_box {
+    display: block;
+}
+
+.Header .top_service .search_box input[type="text"] {
+    font-size: 20px;
+    width: 450px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #444;
+}
+
+.Header .top_service .search_box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.Header .top_service .search_box::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 60px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
 .Header .Gnb>ul>li {
     float: left;
 }
@@ -557,6 +672,17 @@ body {
     width: 300px;
     text-align: left;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.Section04 .case::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    width: 40px;
+    height: 2px;
+    background: #008850;
+
 }
 
 
