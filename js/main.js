@@ -87,6 +87,11 @@ $(function () {
 
     // pop up cookie
 
+
+    var date = new Date();
+    date.setTime(date.getTime() + 60 * 1000);
+
+    console.log(date)
     console.log($.cookie('todayPopUp'));
     var TCK = $.cookie('todayPopUp');
     if (!TCK) {
@@ -94,7 +99,7 @@ $(function () {
     }
 
     $('#Today').on('change', function () {
-        $.cookie('todayPopUp', '팝업쿠키', { expires: 0.1 });
+        $.cookie('todayPopUp', '팝업쿠키', { expires: date });
         $('.today_pop').hide();
         //출처: https://offbyone.tistory.com/176 [쉬고 싶은 개발자:티스토리]
     })
